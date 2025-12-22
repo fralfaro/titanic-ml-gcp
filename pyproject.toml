@@ -1,0 +1,21 @@
+[project]
+name = "titanic-ml"
+version = "0.1.0"
+description = "Pipeline de Machine Learning reproducible en GCP usando el dataset Titanic como referencia."
+requires-python = ">=3.10"
+
+dependencies = [
+  "pandas",
+  "numpy",
+  "scikit-learn"
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff",
+  "pytest"
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]
